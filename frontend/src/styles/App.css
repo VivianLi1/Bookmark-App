@@ -1,0 +1,8 @@
+body, html {
+    color: rgb(250, 230, 193);
+    font-family: "Cormorant", serif;
+}
+
+.loading-page{
+    background-color: #633C23;
+}

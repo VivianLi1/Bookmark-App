@@ -1,0 +1,84 @@
+.home-page{
+    text-align: center;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+.library-book-image{
+    width: 120px;
+    height: auto;
+}
+
+.library-book-image > img{
+    width: 120px;
+    object-fit: cover;
+}
+
+.delete-book-button > button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    color: rgb(250, 230, 193);
+    background-color: #633C23;
+    font-size: large;
+    cursor: pointer;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.delete-book-button > button:hover{
+    background-color: #7e563b;
+    
+}
+
+.library-book-div{
+    width: 600px;
+    margin: auto;
+}
+
+.library-book{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+.library-book-custom{
+    text-align: right;
+    width: 140px;
+    margin-right: 30px;
+}
+
+.library-book-custom > div {
+    margin-bottom: 15px;
+}
+
+.library-books-layout{
+    padding-top: 10px;
+    padding-bottom: 80px;
+}
+
+.library-book-div > hr{
+    display: block;
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid rgb(250, 230, 193);
+    margin: 1em 0; 
+    padding: 0; 
+}
+
+.library-book-info{
+    text-align: left;
+    width: 200px;
+    padding-inline: 20px;
+}
+
+.book-title > h3{
+    margin-top: 0;
+}

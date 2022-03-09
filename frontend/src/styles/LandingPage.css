@@ -1,0 +1,38 @@
+body, html {
+    margin: 0;
+    height: 100%;
+}
+
+.landing-page {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.8)) , url(../images/landing-page.jpg);
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.landing-page-container{
+    margin-top: 10%;
+    text-align: center;
+    color: rgb(250, 230, 193);
+    background-color: #B17149;
+    padding: 70px;
+    font-size: xx-large;
+    font-weight: 700;
+
+    border-radius: 20px;
+
+}
+
+.fa-bookmark{
+    margin-right: 10px;
+}
+
+.landing-page-container > h1{
+    margin: 0;
+}
+
+.landing-page-container > p{
+    font-size: x-large;
+    font-weight: 400;
+}

@@ -1,0 +1,99 @@
+body{
+    background-color: #B17149;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+}
+
+.search > div{
+    min-width: 50%;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.textfield {
+    margin-right: 20px;
+}
+
+.fetched-book{
+    display: flex;
+    margin: 20px;
+    height: 200px;
+}
+
+.book-info{
+    margin-inline: 30px;
+    width: 200px;
+}
+
+.fetched-book-title > h3{
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.fetched-book-author > h4{
+    margin: 0;
+}
+
+.cover-div{
+    width: 120px;
+    height: auto;
+}
+
+.cover-div > img{
+    width: 100%;
+    height: auto;
+}
+
+.add-book-to-library-button > button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    color: rgb(250, 230, 193);
+    background-color: #633C23;
+    font-size: large;
+    cursor: pointer;
+}
+
+.add-book-to-library-button > button > i{
+    margin: 0;
+}
+
+.add-book-to-library-button > button:hover{
+    background-color: #7e563b;
+}
+
+.fetched-book-div{
+    display: inline-block;
+    margin: 20px;
+}
+
+.fetched-books-layout{
+    width: 80%;
+}
+
+.fetched-book-div > hr{
+    display: block;
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid rgb(250, 230, 193);
+    margin: 1em 0; 
+    padding: 0; 
+}
+
