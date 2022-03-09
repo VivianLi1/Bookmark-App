@@ -1,10 +1,12 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import AddBookToLibraryButton from "./AddBookToLibraryButton";
+import AddBookDialog from "./AddBookDialog";
 
 const FetchedBook = ({book, user}) => {
     
     const [isAddingBook, setIsAddingBook] = useState(false);
+    const [dialogOpen, setDialogOpen] = useState(false);
 
     useEffect(() => {
         if(isAddingBook){
@@ -34,7 +36,12 @@ const FetchedBook = ({book, user}) => {
     }, [isAddingBook]);
 
     const handleAddBookToLibrary = () => {
+        setDialogOpen(true);
         setIsAddingBook(true);
+    };
+
+    const handleDialogClose = () => {
+        setDialogOpen(false);
     };
 
     return (
@@ -47,6 +54,11 @@ const FetchedBook = ({book, user}) => {
                     <div className="fetched-book-publish-year"><p>pub. {book.first_publish_year}</p></div>
                 </div>
                 <AddBookToLibraryButton onClick={handleAddBookToLibrary}/>
+                <AddBookDialog
+                    open={dialogOpen}
+                    onClose={handleDialogClose}
+                    book={book}
+                />
             </div>
             <hr />
         </div>

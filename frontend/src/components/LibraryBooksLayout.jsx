@@ -1,7 +1,8 @@
-import { CircularProgress } from "@mui/material";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import EmptyLibraryPage from "./EmptyLibraryPage";
 import LibraryBook from "./LibraryBook";
+import LoadingPage from "./LoadingPage";
 
 const LibraryBooksLayout = ({user}) => {
 
@@ -33,7 +34,9 @@ const LibraryBooksLayout = ({user}) => {
 
     return (
         <div className="library-books-layout">
-            { isFetching ? <CircularProgress color="inherit"/> : books.map((book) => <LibraryBook book={book} key={book.id} deleteFromBooks={deleteFromBooks}/>)}
+            { isFetching ? <LoadingPage /> : 
+                books.length === 0 ? <EmptyLibraryPage /> :
+                    books.map((book) => <LibraryBook book={book} key={book.id} deleteFromBooks={deleteFromBooks}/>)}
         </div>
     );
 }

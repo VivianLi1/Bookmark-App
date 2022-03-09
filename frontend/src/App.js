@@ -13,7 +13,7 @@ function App() {
   const { isAuthenticated, isLoading } = useAuth0();
 
   if (isLoading) {
-    <LoadingPage />
+    return <LoadingPage />
   }
 
   return (

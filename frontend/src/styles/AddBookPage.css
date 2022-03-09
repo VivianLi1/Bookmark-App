@@ -97,3 +97,7 @@ form{
     padding: 0; 
 }
 
+.add-book-dialog{
+    margin: 30px;
+    font-family: 'Roboto', sans-serif;
+}

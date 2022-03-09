@@ -4,5 +4,9 @@ body, html {
 }
 
 .loading-page{
-    background-color: #633C23;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 5%;
 }
