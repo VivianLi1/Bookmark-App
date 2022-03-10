@@ -4,10 +4,11 @@ import { useEffect, useState } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 
 import AddBookForm from "./AddBookForm";
-import { Button, CircularProgress } from "@mui/material";
+import { Button } from "@mui/material";
 import LogoutButton from "./LogoutButton";
 import { Link } from "react-router-dom";
 import FetchedBooksLayout from "./FetchedBooksLayout";
+import LoadingPage from "./LoadingPage";
 
 const AddBookPage = (props) => {
 
@@ -49,7 +50,7 @@ const AddBookPage = (props) => {
             <div className="search">
                 <AddBookForm onSubmit={handleSubmit} disabled={isFetching}/>
             </div>
-            {isFetching ? <CircularProgress /> : <FetchedBooksLayout fetchedBooks={fetchedBooks} user={user}/>}
+            {isFetching ? <LoadingPage /> : <FetchedBooksLayout fetchedBooks={fetchedBooks} user={user}/>}
             
         </div>
     )
