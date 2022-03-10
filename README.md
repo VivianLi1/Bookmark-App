@@ -26,7 +26,7 @@ library page
 - [Auth0](https://auth0.com/)
 - [ReactJS](https://reactjs.org/) 
 - [Spring Boot](https://spring.io/projects/spring-boot)
-- [MySql](https://www.mysql.com/)
+- [MySQL](https://www.mysql.com/)
 
 ## Future Development Goals
 - More descriptive book information
