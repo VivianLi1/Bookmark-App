@@ -25,6 +25,7 @@ library page
 - [Open Library Search API](https://openlibrary.org/dev/docs/api/search/)
 - [Auth0](https://auth0.com/)
 - [ReactJS](https://reactjs.org/) 
+- [Material UI](https://mui.com/)
 - [Spring Boot](https://spring.io/projects/spring-boot)
 - [MySQL](https://www.mysql.com/)
 
